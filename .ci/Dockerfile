@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:latest
 
 RUN apt-get update && \
-    apt-get install software-properties-common && \
+    apt-get install -y software-properties-common && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
     apt-get install -y -q openjdk-11-jre curl jq gettext && \
